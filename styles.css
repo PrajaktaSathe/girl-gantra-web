@@ -97,13 +97,23 @@ a {
     justify-content: space-between;
 }
 
-@media (max-width: 720px) {
+@media (max-width: 991px) {
     .img-grid {
         grid-template-columns: 50% 50%;
     }
 
     .item {
         margin: 10px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .img-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-links {
+        font-size: smaller;
     }
 }
 
